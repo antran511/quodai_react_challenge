@@ -1,18 +1,9 @@
 import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
+import MainPage from './pages/MainPage';
 
 function App() {
   return (
-    <React.Fragment>
-      <CssBaseline />
-      <Container maxWidth="sm">
-        <Typography variant="h3" gutterBottom>
-          Github issues
-        </Typography>
-      </Container>
-    </React.Fragment>
+    <MainPage></MainPage>
   );
 }
 
