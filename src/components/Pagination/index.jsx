@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Pagination, PaginationItem, PaginationLink, Row } from 'reactstrap';
+import { Container, Pagination, PaginationItem, PaginationLink   } from 'reactstrap';
 import "./index.scss";
 
 PaginationComponent.defaultProps = {
