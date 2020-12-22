@@ -3,6 +3,7 @@
 const initialState = {
     issueList: [],
     loading: false,
+    highlightedId: null,
     error: ''
 }
 
@@ -25,6 +26,16 @@ const issueReducer = (state = initialState, action) => {
                 loading: false,
                 error: action.error
             } 
+        case 'HIGHLIGHT_ISSUE':
+            return {
+                ...state,
+                highlightedId: action.data.id
+            }
+        case 'UNHIGHLIGHT_ISSUE':
+            return {
+                ...state,
+                highlightedId: null
+            }
         default:
             return state;
     }   

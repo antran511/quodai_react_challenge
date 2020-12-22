@@ -8,3 +8,16 @@ export const fetchIssues = (page) => async dispatch => {
         .catch(error => dispatch({ type: "FETCH_ISSUES_FAILURE", error}))
 }
 
+export const highlightIssue = (issue) => {
+    return {
+        type: 'HIGHLIGHT_ISSUE',
+        data: issue
+    };
+} 
+
+export const unhighlightIssue = () => {
+    return {
+        type: 'UNHIGHLIGHT_ISSUE',
+    };
+} 
+
